@@ -1,6 +1,11 @@
-drop database laibrary;
+
 create database laibrary;
 use laibrary;
+CREATE TABLE Staff(
+    Aut_Id INT PRIMARY KEY,
+    Password varchar(20),
+    LoginId varchar(20)
+    );
 CREATE TABLE Staff(
     Staff_Id INT PRIMARY KEY,
     s_name varchar(20)
@@ -28,9 +33,6 @@ CREATE TABLE Student_Details (
     no_books_issued INT,
     academic_year VARCHAR(50)
 );
-
-
-DROP TABLE Transaction_History;
 CREATE TABLE Transaction_History (
     transaction_id INT PRIMARY KEY,
     member_id INT,
