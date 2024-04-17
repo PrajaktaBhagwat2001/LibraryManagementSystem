@@ -1,7 +1,7 @@
 
 create database laibrary;
 use laibrary;
-CREATE TABLE Staff(
+CREATE TABLE Authentication_System(
     Aut_Id INT PRIMARY KEY,
     Password varchar(20),
     LoginId varchar(20)
